@@ -1,0 +1,15 @@
+[project]
+name = "gpt-tokenizer"
+version = "0.1.0"
+description = "A from-scratch, byte-level BPE tokenizer (GPT-2/GPT-4 style)."
+requires-python = ">=3.9"
+dependencies = [
+    "regex>=2023.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["gpt_tokenizer*"]
